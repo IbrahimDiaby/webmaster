@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: "Lucida Grande", sans-serif;
+}
+
+header {
+  background-color: #c94c4c;
+  color: #eee;
+  padding-left: 10px;
+}
+
+header nav, header h1 {
+  display: inline-block;
+  font-family: "Lucida Console", monospace;
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-size: 1.2em;
+}
+
+section h3{
+  border-bottom: 1px solid #000;
+}
+
+nav { height: 100%; }
+
+nav a {
+  color: #eee;
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+  padding: 18px;
+  height: 100%;
+  width:100%;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+span.tpask{
+  color: red;
+}
+
+h5 span.tpask{
+  text-decoration: underline;
+}
+
+div.menu-items{
+  background-color: #c94c4c;
+}
+
+section img {
+  border-radius: 50%;
+  width: 120px;
+}
+
+article {
+  padding: 14px 14px;
+}
+
+section article.notice{
+  text-align: center;
+}
+
+section article.notice h1{
+  text-transform: uppercase;
+  font-size: 200%;
+}
+
+article p span.selector{
+  font-weight: bold;
+  color: red;
+}
+
+article p span.classe{
+  font-weight: bold;
+  color: blue;
+}
+
+article p.Bonus{
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 20px;
+  padding: 10px 0px;
+}
+
+.description, .illustration{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
+  width: auto;
+}

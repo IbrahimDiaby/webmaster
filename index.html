@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Mini-projet ProgWeb1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Projet de groupe">
+    <meta name="keywords" content="Projet de groupe, Programmation Web 1, HTML, CSS">
+    <meta name="author" content="Diaby Ibrahim &amp; Lucas Sobczak">
+
+    <link rel="stylesheet" type="text/css" href="style_general.css"/>
+    <link rel="stylesheet" type="text/css" href="agencement_flex.css"/>
+    <link rel="shortcut icon" href="illustration1.png">
+    <!-- Pour l'icone menu de la version mobile-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <h1 class="UE">UE Programmation Web 1</h1>
+      <nav class="nav">
+        <div class="nav-bar-box">
+          <span class="icon_nav">
+            <i class="fa fa-bars"></i>
+          </span>
+          <div class="menu-items">
+            <a href="index.html">Home</a>
+            <a href="reponses.html">Réponses</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- PAGE A STRUCTURER -->
+
+    <section>
+
+      <article class="illustr">
+        <div class="illustration">
+            <img src="illustration1.png" alt="Image de Illustration 1" />
+        </div>
+
+        <div class="description">
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+      </article>
+
+      <article class="illustr">
+        <div class="illustration">
+            <img src="illustration2.png" alt="Image de Illustration 2" />
+        </div>
+
+        <div class="description">
+          <p class="">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+          </p>
+        </div>
+
+      </article>
+    </section>
+
+
+    <!-- *********************************************************** -->
+    <footer>Programmation Web 1</footer>
+  </body>
+  <script>
+    var toolsBar = document.getElementsByClassName('icon_nav')[0];
+    var headers = document.getElementsByClassName('header')[0];
+    // var dw = document.body.clientWidth;
+
+
+    toolsBar.addEventListener("click", function () {
+      if(this.nextElementSibling.style.display === 'none'){
+        this.nextElementSibling.style.display = "inline-block";
+        this.nextElementSibling.style.position = "absolute";
+        this.nextElementSibling.style.top = "53px";
+        this.nextElementSibling.style.right = "0px";
+        this.nextElementSibling.style.overflow = "auto";
+
+        console.log(this.nextElementSibling.style.display);
+      }
+
+      else{
+        this.nextElementSibling.style.display = "none";
+        console.log(this.nextElementSibling.style.display);
+      }
+    });
+
+    // console.log(dw);
+
+    // headers.addEventListener("mouseout", function () {
+    //   this.getElementsByClassName("menu")[0].getElementsByClassName("menu-items").style.display = "none";
+    //   console.log(this.getElementsByClassName("menu")[0].getElementsByClassName("menu-items"));
+    // });
+    // // console.log(headers);
+    // console.log(headers.getElementsByClassName("menu")[0].getElementsByClassName("menu-items"));
+    // // console.log(headers.getElementsByClassName("menu"));
+    // // console.log(headers.getElementsByClassName("menu")[0].getElementsByClassName("menu-items"));
+  </script>
+
+</html>

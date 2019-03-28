@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Mini-projet ProgWeb1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Projet de groupe">
+    <meta name="keywords" content="Projet de groupe, Programmation Web 1, HTML, CSS">
+    <meta name="author" content="Diaby Ibrahim &amp; Lucas Sobczak">
+
+    <link rel="stylesheet" type="text/css" href="style_general.css"/>
+    <link rel="stylesheet" type="text/css" href="agencement_flex.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="illustration1.png">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <h1 class="UE">UE Programmation Web 1</h1>
+      <nav class="nav">
+        <div class="nav-bar-box">
+          <span class="icon_nav">
+            <i class="fa fa-bars"></i>
+          </span>
+          <div class="menu-items">
+            <a href="index.html">Home</a>
+            <a href="reponses.html">Réponses</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- PAGE A STRUCTURER -->
+    <section>
+      <article class="notice">
+        <h1>Compte Rendu Du Projet</h1>
+        <h5>Diaby Ibrahim &amp; Lucas Sobczak</h5>
+      </article>
+
+      <article class="">
+        <h3>Partie 1</h3>
+        <h5>Mise en oeuvre : <span class="tpask">Travail à réaliser</span></h5>
+        <p>Voir le contenu de la page html <a href="#"><b>reponses.html</b></a></p>
+      </article>
+
+      <article class="">
+        <h3>Partie 2</h3>
+        <h5>Mise en oeuvre : <span class="tpask">Prise en main du code fourni</span></h5>
+        <h4>Questions 1.a</h4>
+
+        <p>
+          Le selecteur <span class="selector">header nav</span> permet de selectionner tous les éléments
+          <span class="selector">&lsaquo;nav&rsaquo;</span> qui sont des enfants de <span class="selector">&lsaquo;header&rsaquo;</span>
+          qu'ils soient des enfants direct ou non.
+        </p>
+
+        <p>
+          De meme, le selecteur <span class="selector">header h1</span> permet de selectionner tous les éléments
+          <span class="selector">&lsaquo;h1&rsaquo;</span> qui sont des enfants de <span class="selector">&lsaquo;header&rsaquo;</span>
+          qu'ils soient des enfants direct ou pas.
+        </p>
+
+        <h4>Questions 1.b</h4>
+
+        <p>
+          La propriété <span class="selector">display: inline-block; </span> affiche les blocs sur lesquels
+          elle est appliqué les uns à coté des autres sur la meme ligne horizontale tant qu'il y a
+          de l'espace. En contrario, elle fait un retour chariot.
+        </p>
+
+        <h4>Questions 2</h4>
+
+        <p>
+          La balise <span class="selector">&lsaquo;meta&rsaquo;</span> permet de placer des <span class="selector">meta-données</span>
+          exploitables par les moteurs de recherches, les navigateurs web...<br />
+          Ces informations peuvent etre <span class="selector">des mots clés</span>, <span class="selector">une description du site</span>, <span class="selector">le nom de l'auteur</span> du site et bien d'autres
+          informations.
+        </p>
+
+        <h4>Questions 3</h4>
+
+        <p>
+          Les selecteurs <span class="selector">.description</span> &amp; <span class="selector">.illustration</span>
+          ont les memes comportements.
+          Une marge de 10px à gauche et de droite ainsi que le texte qui occupe toute la largueur de son élément parent.
+        </p>
+      </article>
+
+      <article class="">
+        <h3>Partie 3</h3>
+
+        <h5>Mise en oeuvre : <span class="tpask">Agencements</span></h5>
+
+        <h2>Agencement Desktop</h2>
+
+        <h4>Question</h4>
+
+        <p>
+          La condition <span class="selector">Media Query</span> utilisé que nous utiliserons pour l'agencement mobile est :
+          <span class="selector">@media screen and (max-width : 560px){}</span>
+        </p>
+
+        <h5>Mise en oeuvre : <span class="tpask">Zone d'en-tete</span> (reponses.html  et index.html)</h5>
+
+        <h4>Question 1.a</h4>
+
+        <p>
+          L'élément <span class="selector">&lsaquo;header&rsaquo;</span> doté d'une classe <span class="classe">header</span> contient deux (2) éléments enfants qui sont <span class="selector">&lsaquo;h1&rsaquo;</span>
+          et <span class="selector">&lsaquo;nav&rsaquo;</span> auxquels on applique respectivement une classe
+          <span class="classe">UE</span> et une classe <span class="classe">menu</span>.
+        </p>
+
+        <p>
+          L'élément <span class="selector">&lsaquo;header&rsaquo;</span> est tels que sa couleur de fond est caracterisé par
+          une couleur rouge en hexadécimal <span class="classe">background-color : #c94c4c;</span> tandis que la
+          couleur de texte des éléments dont il est le parent est un gris donné en hexadecimal par <span class="classe">color : #eee;</span>.
+          En outre, le header possède une marge intérieure à gauche de 10px formulé par : <span class="classe">padding-left : 10px;</span>.
+          Grace au selecteur <span class="classe">header.header</span> dans <span class="selector">agencement_flex.css</span>, les
+          éléments contenus dans le <span class="selector">&lsaquo;header&rsaquo;</span> sont agencés cote à cote de manière horizontale
+          grace à la propriété <span class="classe">display : flex;</span>.
+        </p>
+
+        <p>
+          Le selecteur <span class="selector">header h1.UE</span> permet à toutes les balises <span class="selector">h1</span> auxquelles sont appliqué
+          la classe <span class="selector">UE</span> prennent 3 fois plus de place que les autres éléments
+          contenu dans le <span class="classe">&lsaquo;header&rsaquo;</span> grace à la propriété <span class="classe">flex-grow : 3;</span>
+          ainsi qu'une marge intérieure de <span class="selector">15px en haut et en bas et 0px à droite et à gauche</span>  grace à la propriété
+          <span class="classe">padding : 15px 0px;</span> en plus, dans le fichier <span class="classe">style_general.css</span>
+          contiennent les propriétes suivantes : <span class="classe">margin-top: 0; margin-bottom: 0; vertical-align: middle; font-size: 1.2em;</span>
+          qui s'appliquent sur toutes les balises <span class="selector">&lsaquo;h1&rsaquo;</span> contenues dans le header(le selecteur <span class="selector">header h1</span>).<br />
+          <span class="classe">margin-top: 0; margin-bottom: 0;</span> n'appliquent aucune marge extérieure en haut et en bas de ce dernier. <br />
+          <span class="classe">vertical-align: middle;</span> centre verticalement le texte. <br />
+          <span class="classe">font-size: 1.2em;</span> donne une taille de <span class="selector">1.2em</span> au texte de la balise <span class="selector">&lsaquo;h1&rsaquo;</span>.
+        </p>
+
+        <p>
+          Dans le fichier <span class="selector">style_general.css</span> on peut y touver les selecteurs
+          <span class="selector">nav</span> et <span class="selector">nav a</span>.
+        </p>
+
+        <p>
+          La balise <span class="selector">&lsaquo;nav&rsaquo;</span> auquel est appliqué la classe <span class="classe">nav</span>
+          a une propriété <span class="classe">display: inline-block;</span> qui permet l'affichage soit de sorte que les éléments enfants
+          soient alignés les unes à coté des autres sur une meme ligne tant qu'il y a de l'espace sur cette dernière en contrario d'un
+          retour chariot pour afficher les autres éléments et la propriété <span class="classe">font-family: "Lucida Console", monospace;</span>
+          qui change la mise en forme du texte en utilisant une police nommée <span class="classe">Lucida Console</span> et tous les caractères mesurent la même largeur
+          (<span class="classe">monospace</span>). <br /><br />
+          En outre, les balises nav occupent 100% de la taille de son contenu avec la propriété <span class="classe">height: 100%;</span>
+          <br />
+
+          Tous les éléments <span class="selector">&lsaquo;a&rsaquo;</span> qui sont des enfants direct ou non de la balise
+          <span class="selector">&lsaquo;nav&rsaquo;</span> ont un comportement correspondant respectivement aux propriétés
+          sur dessous : <br />
+          <span class="classe">color : #eee;</span> correspondant à une couleur grise. <br />
+          <span class="classe">display : inline-block;</span> correspondant au fait que toutes les balises <span class="selector">&lsaquo;a&rsaquo;</span>
+          soient alignés les unes à coté des autres sur une meme ligne tant qu'il y a de l'espace sur cette dernière en contrario d'un
+          retour chariot pour afficher les autres éléments. <br />
+          <span class="classe">text-align : left;</span> correspondant au fait que le texte commence de la gauche. (aligné à gauche). <br />
+          <span class="classe">text-decoration : none;</span> correspondant au fait que le texte n'est pas un comportement de decoration qui soit
+          un soulignement, un surlignement, un texte barré etc... <br />
+          <span class="classe">padding : 18px;</span> correspondant à une marge intérieur de <span class="selector">18 pixels</span> en haut, à droite, en bas, à gauche de ce dernier. <br />
+          <span class="classe">height : 100%;</span> correspondant au fait qu'il occupe toute la hauteur due à son contenu. <br />
+          <span class="classe">width : 100%;</span> correspondant au fait qu'il occupe toute la largueur due à son contenu. <br />
+        </p>
+
+        <p>
+          Lorsque les balises <span class="selector">&lsaquo;a&rsaquo;</span> contenu dans <span class="selector">&lsaquo;nav&rsaquo;</span>
+          sont survolé, la couleur de font change en du gris tandis que la couleur du texte se change en du noir. <br />
+          Voir le code ci-dessous : <br />
+          <span class="classe">
+            nav a:hover { <br />
+              background-color: #ddd; <br />
+              color: black; <br />
+            }
+          </span>
+        </p>
+        <!-- <p>
+          Cepenant, vu que le fichier <span class="selector">agencement_flex.css</span> est chargé après le fichier <span class="selector">style_general.css</span>
+          alors
+        </p> -->
+        <h4>Question 1.b</h4>
+
+        <p>
+          La propriété CSS qui a permis de ne pas afficher
+          <span class="selector">
+            <code>
+              <span class="icon nav">
+                <i class="fa fa-bars"></i>
+              </span>
+            </code>
+          </span> est <span class="selector">display : none;</span>
+        </p>
+
+        <h5>Mise en oeuvre : <span class="tpask">Zone de corps de page</span> (responses.html)</h5>
+
+        <p>
+          Les balises <span class="selector">&lsaquo;article&rsaquo;</span> qui sont des enfants
+          <span class="selector">&lsaquo;section&rsaquo;</span> auxquelles sont appliquées les classes
+          <span class="selector">notice</span> sont les blocs qui contiennent les informations qui sur les étudiants
+          ayant dévéloppé la page. Les noms sont des enfants de la balise <span class="selector">&lsaquo;h5&rsaquo;</span>
+          tandis que le grand titre donnant l'information sur la page (le travail abbatu) est contenu dans une balise
+          <span class="selector">&lsaquo;h1&rsaquo;</span>.
+
+        </p>
+
+        <p>
+          Dans la zone du corps de la page, l'architecture est telle que toutes les balises
+          <span class="selector">&lsaquo;h3&rsaquo;</span> qui sont des enfants direct ou pas des balises
+          <span class="selector">&lsaquo;section&rsaquo;</span> sont appliqués une bordure en bas d'épaisseur
+          <span class="classe">1 pixels</span> et de style de la bordure <span class="classe">solid</span> et de
+          <span class="classe">couleur de texte</span> en hexadecimal : <span class="classe">#000</span>; ainsi que
+          les images (<span class="selector">&lsaquo;img&rsaquo;</span>) auxquelles sont appliqués un arrondi des bordures
+          de <span class="classe">50%</span> et une largueur de <span class="classe">120px</span>
+        </p>
+
+        <p>
+          Toutefois, les balises <span class="selector">&lsaquo;article&rsaquo;</span> sont des balises sur lesquelles
+          sont appliquées des marges intérieures de <span class="classe">14px</span> aux 4 cotés (haut, droite, bas, gauche).
+        </p>
+
+        <p>
+          En outre, toutes les balises <span class="selector">&lsaquo;span&rsaquo;</span> qui sont des enfants
+          des balises <span class="selector">&lsaquo;p&rsaquo;</span> respectivement enfant de la balise
+          <span class="selector">&lsaquo;article&rsaquo;</span> auxquelles sont appliqués respectivement les classes
+          <span class="classe">selector</span> et <span class="classe">classe</span> sont tous 2 en gras grace à la
+          propriété css : <span class="classe">font-weight : bold;</span> qui permet de changer l'épaisseur du texte en plus
+          ou moins important. Les textes où sont appliqués la classe <span class="selector">selector</span> sont de couleur
+          <span class="selector">Rouge</span> tandis que les textes où sont appliqués la classe
+          <span class="selector">classe</span> sont de couleur <span class="classe">Bleu</span>.
+        </p>
+
+        <p>
+          Les balises <span class="selector">&lsaquo;p&rsaquo;</span> qui sont des enfants de la balise
+          <span class="selector">&lsaquo;article&rsaquo;</span> doté de la classe
+          <span class="selector">&lsaquo;bonus&rsaquo;</span> ont juste leur texte centré. Au dessus et en dessous d'eux nous
+          pouvons remarquer des barres verticales grace à la balise <span class="selector">&lsaquo;hr&rsaquo;</span>
+        </p>
+
+        <h5>Mise en oeuvre : <span class="tpask">Zone de corps de page</span> ( index.html )</h5>
+
+        <p>
+            Dans le corps de la page, le contenu de la page est agencé de sorte que les balises
+            <span class="selector">&lsaquo;article&rsaquo;</span> auxquelles sont appliquées la
+            classe <span class="classe">illustr</span> et des marges intérieures de
+            <span class="classe">14px</span> aux 4 cotés (haut, droite, bas, gauche).
+            La classe <span class="classe">illustr</span> change l'agencement des balises
+            <span class="selector">&lsaquo;article&rsaquo;</span> en mettant les éléments enfants les uns à coté des autres
+            grace à la propriété <span class="classe">display : flex;</span>.
+        </p>
+
+        <p>
+          Les <span class="selector">&lsaquo;div&rsaquo;</span> auxquelles ont appliquent respectivement
+          les classes <span class="classe">illustration</span> et <span class="classe">description</span> qui
+          correspondent aux memes comportements.
+          Cependant, la <span class="selector">&lsaquo;div&rsaquo;</span> à laquelle est appliqué la classe
+          <span class="classe">illustration</span> contient une balise <span class="selector">&lsaquo;img&rsaquo;</span> qui
+          illustre un module  a laquelle est appliqué un arrondi des bordures de celle-ci de
+          <span class="classe">50%</span> et une largueur de <span class="classe">120px</span> <br />
+          ( <span class="classe"> <br />
+            section img { <br />
+              border-radius: 50%; <br />
+              width: 120px; <br />
+            } <br />
+          </span> )
+          <br /> tandis que
+          la <span class="selector">&lsaquo;div&rsaquo;</span> à laquelle est appliqué la classe
+          <span class="classe">description</span> contient une balise <span class="selector">&lsaquo;p&rsaquo;</span>
+          qui contient la description du module illustré par l'image sur dessus.
+        </p>
+
+        <h5>Mise en oeuvre : <span class="tpask">Zone de pied de page</span> (index.html et responses.html)</h5>
+
+        <p>
+          Dans le fichier <span class="selector">style_general.css</span>, on peut trouver le selecteur
+          <span class="selector">footer</span> dont le texte qui y est contenu est <span class="selector">centré</span> avec une taille
+          de <span class="selector">0.8 em</span> ainsi qu'<span class="selector">une marge extérieure en haut de 20 pixels</span>.
+        </p>
+        <p>
+          En outre, il possède <span class="classe">une marge intérieure</span> de <span class="selector">10px en haut et en bas</span>
+          ainsi qu'<span class="classe">une marge intérieure</span> de <span class="selector">0px à gauche et à droite</span>. <br />
+          Voir ci-dessous : <br />
+          <span class="classe">
+            footer { <br />
+              text-align: center; <br />
+              font-size: 0.8em; <br />
+              margin-top: 20px; <br />
+              padding: 10px 0px; <br />
+            }
+          </span>
+
+        </p>
+
+
+        <h2>Agencement Mobile</h2>
+
+        <h5>Mise en oeuvre : <span class="tpask">Zone d'en-tete</span> ( index.html &amp; responses.html )</h5>
+
+        <p>
+          Le comportement du <span class="selector">&lsaquo;header&rsaquo;</span> sur les appareils mobiles
+          ayant une largeur inférieure ou égale à <span class="classe">560px</span>  est tel que l'icone des 3 barres horizontales
+          empilés (<span class="selector"><code><span class="icon nav"><i class="fa fa-bars"></i></span></code></span>)
+          n'est pas visible sur les appareils Desktop. Cependant elle s'affiche sur les appareils mobiles
+          avec un comportement flexible grace à la propriété css <span class="classe">display : flex; </span> et
+          une marge intérieure de <span class="classe">18 pixels </span> en haut et en dessous
+          ainsi qu'une de <span class="classe">5 pixels </span> à gauche et à droite.
+        </p>
+
+        <p>
+          Toutefois, la <span class="selector">&lsaquo;div&rsaquo;</span> contenant nos options de la barre de navigation
+          s'affiche différemment. À celle-ci est appliqué la classe <span class="classe">menu-items</span> qui contient les
+          propriétés suivantes : <br />
+          <span class="classe">
+            div.menu-items{ <br />
+              display: inline-block; <br />
+              position : absolute; <br />
+              top : 53px; <br />
+              right : 0px; <br />
+              overflow : auto; <br />
+            }
+          </span> <br />
+          Explication du Code :
+          <span class="classe">display: inline-block;</span> agence les éléments en créant des blocs linéaires tout en
+          faisant un retour chariot si la largueur d'un élément courant est supérieure à la largueur disponible sur cette ligne.
+          <span class="classe">position: absolute; top : 53px; right : 0px;</span> positionne la
+          <span class="selector">&lsaquo;div&rsaquo;</span> avec un décalage de
+          <span class="classe">53px</span> du haut du <span class="selector">&lsaquo;body&rsaquo;</span> et
+          <span class="classe">0px</span> de sa droite. Cependant, si le parent possède des marges intérieures,
+          celles-ci sont ajoutés aux décalages.
+          <span class="classe">overflow: auto;</span> donne une texture de glissement vers la droite et vers la gauche
+          à notre <span class="selector">&lsaquo;div&rsaquo;</span>.
+        </p>
+
+        <h5>Mise en oeuvre : <span class="tpask">Zone de corps</span> (index.html)</h5>
+
+        <p>
+          Pour tout appareil ayant une largueur inférieure ou égale à <span class="selector">560px</span>, l'agencement
+          du corps de la page est tels que les balises <span class="selector">&lsaquo;article&rsaquo;</span> auxquelles sont
+          appliquées la classe <span class="classe">illustr</span> change l'agencement des balises
+          <span class="selector">&lsaquo;article&rsaquo;</span> de sorte à créer des blocs linéaires grace à la propriété CSS
+          <span class="classe">display : inline-block;</span> dans laquelle les balises auxquelles sont appliquées
+          la classe <span class="classe">illustration</span> sont centré (<span class="classe">text-align : center;</span>).
+        </p>
+
+        <h5>Mise en oeuvre : <span class="tpask">Zone de corps</span> (reponses.html)</h5>
+        <p>
+          NB : La zone de corps de page reste identique quelque soit l'appareil utilisé.
+        </p>
+
+        <h5>Mise en oeuvre : <span class="tpask">Zone de pied de page</span> ( index.html &amp; responses.html )</h5>
+
+        <p>
+          NB : La zone de pied de page reste identique quelque soit l'appareil utilisé.
+        </p>
+      </article>
+
+      <article class="">
+        <hr>
+        <p class="Bonus">
+          Du code JavaScript, a été ajouté pour cacher le dropdown permettant ainsi de voir la première illustration.
+          Lorsque l'appareil utilisé est un mobile.
+        </p>
+        <hr>
+      </article>
+
+    </section>
+
+    <!-- *********************************************************** -->
+
+    <footer>Programmation Web 1</footer>
+
+  </body>
+  <script>
+    var toolsBar = document.getElementsByClassName('icon_nav')[0];
+    var headers = document.getElementsByClassName('header')[0];
+    // var dw = document.body.clientWidth;
+
+
+    toolsBar.addEventListener("click", function () {
+      if(this.nextElementSibling.style.display === 'none'){
+        this.nextElementSibling.style.display = "inline-block";
+        this.nextElementSibling.style.position = "absolute";
+        this.nextElementSibling.style.top = "53px";
+        this.nextElementSibling.style.right = "0px";
+        this.nextElementSibling.style.overflow = "auto";
+
+        console.log(this.nextElementSibling.style.display);
+      }
+
+      else{
+        this.nextElementSibling.style.display = "none";
+        console.log(this.nextElementSibling.style.display);
+      }
+    });
+
+    // console.log(dw);
+
+    // headers.addEventListener("mouseout", function () {
+    //   this.getElementsByClassName("menu")[0].getElementsByClassName("menu-items").style.display = "none";
+    //   console.log(this.getElementsByClassName("menu")[0].getElementsByClassName("menu-items"));
+    // });
+    // // console.log(headers);
+    // console.log(headers.getElementsByClassName("menu")[0].getElementsByClassName("menu-items"));
+    // // console.log(headers.getElementsByClassName("menu"));
+    // // console.log(headers.getElementsByClassName("menu")[0].getElementsByClassName("menu-items"));
+  </script>
+</html>
